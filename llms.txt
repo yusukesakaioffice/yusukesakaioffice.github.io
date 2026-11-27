@@ -10,7 +10,7 @@
 - [ITコンサル（料金一覧）](https://it.yusukesakai.jp/#consul): セキュリティ／AI導入・業務改善／システム／ホームページの制作・保守
 - [ホームページの制作・保守](https://it.yusukesakai.jp/#hp): プランと料金
 - [担当者](https://it.yusukesakai.jp/#profile): 経歴
-- [ホームページの制作実績](https://it.yusukesakai.jp/works.html): 本郷スタディコンサルティング、シェアハウスかすみ荘、かすみ荘貸し道具店
+- [ホームページの制作実績](https://it.yusukesakai.jp/works.html): 酒井ゆうすけ 公式サイト（政治家のホームページ）、本郷スタディコンサルティング、シェアハウスかすみ荘
 - [お問い合わせ](https://it.yusukesakai.jp/#form): フォーム（お名前・メール・ご相談内容が必須）
 
 ## 料金（税抜き・目安）
