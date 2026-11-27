@@ -1,0 +1,164 @@
+/* 酒井 勇輔 ITコンサル HP（2026-11-27）
+   色・書体は flyer/it_consul_20261127_v28.html と flyer/hp_seisaku_20261126_v37.html に合わせる。
+   色付きの左縦線は使わない（区切りは上下の線と地の色で）。 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Archivo:wght@600;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;border-radius:0}
+:root{--ink:#0e0e0e;--sub:#5f5f5f;--acc:#ff4a1c;--paper:#ffffff;--hair:#cccccc}
+html{-webkit-text-size-adjust:100%}
+body{word-break:auto-phrase;font-family:'Noto Sans JP',sans-serif;background:var(--paper);color:var(--ink);font-feature-settings:"palt";line-height:1.6}
+a{color:inherit}
+.num{font-family:'Archivo','Noto Sans JP',sans-serif;font-variant-numeric:tabular-nums}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+/* ① 一番上（黒の面） */
+.hero{background:var(--ink);color:#fff;padding:36px 0 32px}
+.hero-grid{display:grid;grid-template-columns:1fr 240px;gap:32px;align-items:center}
+.to{font-size:22px;font-weight:900;letter-spacing:.08em;color:var(--acc)}
+.name{margin-top:10px;display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 14px}
+.name .r{font-size:14px;font-weight:900;letter-spacing:.12em;color:#d9d5cc}
+.name .p{font-size:40px;font-weight:900;letter-spacing:.14em;line-height:1.2}
+.catch{margin-top:18px;font-size:34px;font-weight:900;line-height:1.3;letter-spacing:-.02em}
+.catch em{font-style:normal;color:var(--acc)}
+.tags{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+.tags span{font-size:13px;font-weight:900;border:1.5px solid #fff;padding:2px 10px 3px}
+
+/* ② 顔写真の枠：img/photo.jpg が無いときは灰色の四角に「写真」 */
+.photo{position:relative;width:100%;aspect-ratio:3/4;background:#bdbdbd;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.photo span{font-size:18px;font-weight:700;color:#4a473f;letter-spacing:.2em}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%}
+
+/* 見出し（ビラの黒い箱＋横線） */
+section{padding:36px 0 8px}
+.sec{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.sec h2{font-size:17px;font-weight:900;letter-spacing:.12em;background:var(--ink);color:var(--paper);padding:3px 12px 4px;white-space:nowrap}
+.sec::after{content:"";flex:1;height:2px;background:var(--ink)}
+.sec small{order:3;font-size:13px;font-weight:700;color:var(--sub);white-space:nowrap}
+.sec::after{order:2}
+
+/* ③ ITコンサル */
+.q{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:24px;font-weight:900;margin-bottom:6px}
+.q em{font-style:normal;color:var(--acc)}
+.q .tax{font-size:13px;font-weight:900;color:var(--sub);white-space:nowrap}
+.grp{margin-top:18px;display:flex;align-items:center;gap:10px}
+.grp h3{font-size:13px;font-weight:900;letter-spacing:.12em;background:var(--ink);color:var(--paper);padding:2px 10px 3px;white-space:nowrap}
+.grp::after{content:"";flex:1;height:2px;background:var(--ink)}
+.row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:0 16px;padding:10px 0;border-bottom:1px solid var(--hair)}
+.pain{font-size:17px;font-weight:900;line-height:1.4}
+.do{margin-top:2px;font-size:14px;font-weight:500;line-height:1.5;color:var(--sub)}
+.do b{color:var(--acc);font-weight:900}
+.pr{font-size:24px;font-weight:900;white-space:nowrap;text-align:right;line-height:1}
+.pr small{font-family:'Noto Sans JP',sans-serif;font-size:13px;font-weight:900;margin-left:1px}
+.rate-box{margin-top:22px;border-top:2px solid var(--ink);padding-top:14px}
+.lab{font-size:13px;font-weight:900;letter-spacing:.12em;color:var(--sub);margin-bottom:4px}
+.rate{display:flex;align-items:baseline;gap:8px;font-size:15px;font-weight:900}
+.rate b{font-size:32px;font-weight:900;letter-spacing:-.02em;line-height:1}
+.rate b small{font-family:'Noto Sans JP',sans-serif;font-size:15px;margin-left:2px}
+.free{margin-top:8px;display:inline-block;background:var(--acc);color:var(--ink);font-size:14px;font-weight:900;padding:2px 10px}
+
+/* ④ ホームページ制作・保守（朱の面） */
+.hp-hero{background:var(--acc);padding:28px 0 26px;margin-top:36px}
+.hp-hero .top{font-size:14px;font-weight:900;letter-spacing:.14em}
+.hp-hero .c1{margin-top:8px;font-size:44px;font-weight:900;line-height:1.1;letter-spacing:-.04em}
+.hp-hero .c2{margin-top:10px;font-size:24px;font-weight:900;line-height:1.3}
+.feats{background:var(--ink);color:#fff}
+.feats .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 28px;padding-top:18px;padding-bottom:20px}
+.feat .k{font-size:20px;font-weight:900;letter-spacing:.04em;line-height:1;white-space:nowrap}
+.feat .k i{font-style:normal;font-family:'Archivo',sans-serif;font-weight:900;font-size:44px;letter-spacing:-.02em;margin-right:6px}
+.feat .d{margin-top:8px;font-size:14px;font-weight:500;line-height:1.6;color:#d9d5cc}
+.lead{font-size:20px;font-weight:900;line-height:1.5;margin-bottom:6px}
+.grp + .plans,.grp + ul.fee{margin-top:12px}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.plan{background:#fff;border:1px solid var(--ink);padding:16px}
+.plan .nm{font-size:20px;font-weight:900;line-height:1.25}
+.plan .ds{margin-top:6px;font-size:13.5px;font-weight:500;line-height:1.6;color:#3a3833;min-height:3.2em}
+.plan dl{margin-top:12px}
+.plan dt{margin-top:10px;padding-top:8px;border-top:1px solid var(--hair);font-size:12px;font-weight:900;letter-spacing:.1em;color:var(--sub)}
+.plan dd .p2{font-size:28px;font-weight:900;line-height:1.1;letter-spacing:-.02em;white-space:nowrap}
+.plan dd .p2 small{font-family:'Noto Sans JP',sans-serif;font-size:13px;font-weight:900;margin-left:2px;letter-spacing:0}
+.plan dd .p2 .u{font-family:'Noto Sans JP',sans-serif;font-size:13px;font-weight:900;margin-right:4px;letter-spacing:0}
+.plan dd .nt{margin-top:2px;font-size:12px;font-weight:500;color:var(--sub)}
+.plan dd .tbd{font-size:22px;font-weight:900;line-height:1.3}
+ul.fee{list-style:none;border-top:1px solid var(--ink)}
+.fee li{display:flex;align-items:baseline;gap:12px;padding:8px 0;font-size:15px;border-bottom:1px solid var(--hair)}
+.fee li .l{flex:1}
+.fee li b{font-size:18px;font-weight:800;white-space:nowrap;text-align:right}
+.fee li b:not(.num){font-size:16px;font-weight:900}
+.fee li.b .l{font-weight:900}
+.fee li:nth-child(3),.fee li:last-child{border-bottom:1px solid var(--ink)}
+.notes{margin-top:10px;font-size:13px;line-height:1.75;color:#4a473f}
+
+/* ⑤ 経歴 */
+.career{list-style:none}
+.career li{font-size:16px;line-height:1.7;padding-left:1em;text-indent:-1em}
+.career li::before{content:'・'}
+
+/* ⑥ 成果物へのリンク */
+.btn{display:inline-block;background:var(--ink);color:var(--paper);font-size:16px;font-weight:900;letter-spacing:.06em;padding:12px 22px;text-decoration:none}
+.btn:hover{background:var(--acc);color:var(--ink)}
+
+/* ⑦ 連絡先（朱の帯） */
+.foot{margin-top:40px;background:var(--acc);color:var(--ink);padding:28px 0 32px}
+.foot .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.foot .msg{font-size:22px;font-weight:900;line-height:1.5}
+.foot .p{font-size:28px;font-weight:900;letter-spacing:.14em;line-height:1.2}
+.foot .m{margin-top:8px;font-size:15px;font-weight:900;letter-spacing:.04em;display:flex;align-items:baseline;flex-wrap:wrap}
+.foot .m em{font-style:normal;width:4.2em}
+.foot .m a{font-weight:900;text-decoration:underline;text-underline-offset:3px;word-break:break-all}
+
+/* works.html */
+.pagehead{background:var(--ink);color:#fff;padding:20px 0}
+.pagehead a{font-size:14px;font-weight:900;color:var(--acc);text-decoration:none}
+.works{padding:40px 0 60px}
+.works h1{font-size:30px;font-weight:900;letter-spacing:.06em}
+.works p{margin-top:14px;font-size:17px;font-weight:700;color:var(--sub)}
+
+/* スマホ幅 */
+@media (max-width:700px){
+  .hero{padding:26px 0 24px}
+  .hero-grid{grid-template-columns:1fr;gap:20px}
+  .photo{width:200px;justify-self:start}
+  .to{font-size:19px}
+  .name .p{font-size:32px}
+  .catch{font-size:27px}
+  .q{font-size:20px;flex-wrap:wrap}
+  .pain{font-size:15.5px}
+  .do{font-size:13px}
+  .pr{font-size:20px}
+  .lead{font-size:17px}
+  .hp-hero .c1{font-size:34px}
+  .hp-hero .c2{font-size:20px}
+  .feats .wrap{grid-template-columns:1fr;gap:14px}
+  .feat .k i{font-size:36px}
+  .plans{grid-template-columns:1fr}
+  .plan .ds{min-height:0}
+  .fee li{font-size:14px}
+  .fee li b{font-size:16px}
+  .foot .msg{font-size:19px}
+}
+.wl{list-style:none;margin-top:24px;display:grid;gap:14px}
+.wl a{display:block;padding:18px 20px;border:2px solid var(--ink);border-radius:10px;text-decoration:none;color:var(--ink);background:#fff}
+.wl a:hover{border-color:var(--acc)}
+.wl .t{display:block;font-size:18px;font-weight:900}
+.wl .u{display:block;margin-top:4px;font-size:14px;font-weight:700;color:var(--sub)}
+.row .nt{margin-top:2px;font-size:12px;color:var(--sub)}
+/* 11/27 17:2x .sub は使わなくなった（ホームページ制作も行の形に揃えた） */
+.sub{margin:6px 0 0;padding:4px 0 6px 14px;border-left:0}
+.sub .lead{font-size:16px;margin-top:6px}
+.sub h4{margin-top:14px;font-size:14px;font-weight:900;color:var(--ink)}
+.sub h4 + .row{padding-top:6px}
+.sub h4 + .plans,.sub h4 + ul.fee{margin-top:8px}
+
+/* お問い合わせフォーム・右下の固定ボタン */
+.cf{margin-top:40px}
+#cform{display:grid;gap:14px;max-width:640px}
+#cform label{display:grid;gap:4px;font-size:14px;font-weight:900}
+#cform label b{display:inline;margin-left:8px;font-size:11px;color:var(--acc)}
+#cform input,#cform textarea{font:inherit;font-size:16px;font-weight:500;padding:10px 12px;border:1px solid var(--ink);border-radius:0;background:#fff;color:var(--ink);width:100%}
+#cform input:focus,#cform textarea:focus{outline:2px solid var(--acc);outline-offset:0}
+#cform .hp{position:absolute;left:-9999px;width:1px;height:1px}
+#cform .btn{justify-self:start;border:0;cursor:pointer}
+#cform .btn:disabled{opacity:.5}
+.cmsg{font-size:14px;font-weight:700;color:var(--sub);min-height:1.4em}
+.fab{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--acc);color:var(--ink);font-size:15px;font-weight:900;letter-spacing:.06em;padding:12px 18px;text-decoration:none;border:2px solid var(--ink);transition:opacity .2s}
+.fab.off{opacity:0;pointer-events:none}
+html{scroll-behavior:smooth}

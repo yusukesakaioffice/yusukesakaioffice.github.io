@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>酒井 勇輔｜ITコンサルタント</title>
+<meta name="description" content="地域の社長を全力サポート！会社のITの困りごと、まとめて引き受けます。">
+<link rel="stylesheet" href="style.css">
+<!-- 2026-11-27 文の出どころは flyer/it_consul_20261127_v28.html と flyer/hp_seisaku_20261126_v37.html の2枚だけ。
+     ビラに無い文は「つなぎの見出し」（ITコンサル・ホームページ制作・保守の料金・成果物・お問い合わせ など）のみ。 -->
+</head>
+<body>
+
+<!-- ① 一番上 -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="to">地域の社長を全力サポート！</p>
+      <div class="name"><span class="r">ITコンサルタント</span><span class="p">酒井 勇輔</span></div>
+      <p class="catch">会社のITの困りごと、<br><em>まとめて引き受けます</em></p>
+      <div class="tags"><span>セキュリティ</span><span>AI導入・業務改善</span><span>システム</span><span>ホームページ</span></div>
+    </div>
+    <!-- ② 顔写真の枠。img/photo.jpg を置けば写真が出る。無いときは onerror で img を外し、灰色の四角に「写真」 -->
+    <div class="photo"><span>写真</span><img src="img/photo.jpg" alt="酒井 勇輔" onerror="this.remove()"></div>
+  </div>
+</header>
+
+<main>
+  <!-- ③ ITコンサル（it_consul_20261127_v28.html の文のまま） -->
+  <section id="consul">
+    <div class="wrap">
+      <div class="sec"><h2>ITコンサル</h2></div>
+      <p class="q"><span>こんなことで、<em>困っていませんか？</em></span><span class="tax">（税抜き）</span></p>
+
+      <div class="grp"><h3>セキュリティ</h3></div>
+      <div class="row"><div><p class="pain">請求書のメールが相手に届かないことがある</p><p class="do"><b>→</b> 会社を名乗る偽メールを防ぐ設定と、証明書・ドメインの期限切れを点検します</p><p class="nt">証明書＝通信を暗号化するための電子証明書。ドメイン＝ホームページやメールの住所（◯◯.jp など）</p></div><div class="pr num">2.5<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">社員がAIに社外秘を入れてしまわないか心配</p><p class="do"><b>→</b> AIの利用ルールを作り、2時間の講習で社員に伝えます</p></div><div class="pr num">10<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">取引先からセキュリティの質問票が届いた</p><p class="do"><b>→</b> 回答を作り、足りない社内ルールも整えます</p></div><div class="pr num">15<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">Microsoft 365・Google の設定で安全か分からない</p><p class="do"><b>→</b> 設定を点検します</p></div><div class="pr num">15<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">辞めた人が、まだ社内のシステムに入れるかも</p><p class="do"><b>→</b> 辞めた人・使っていない人のアカウントを洗い出します</p></div><div class="pr num">10<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">バックアップから本当に戻せるか分からない</p><p class="do"><b>→</b> バックアップを点検します</p></div><div class="pr num">15<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">ホームページや予約サイトが攻撃されないか心配</p><p class="do"><b>→</b> 攻撃されやすい弱点が無いかを診断します</p></div><div class="pr num">20<small>万円〜</small></div></div>
+
+      <div class="grp"><h3>AI導入・業務改善</h3></div>
+      <div class="row"><div><p class="pain">パワポやエクセルの手作業に、毎週時間を取られている</p><p class="do"><b>→</b> 毎週の手作業3つを、AIに任せられるようにします</p></div><div class="pr num">15<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">同じ入力や確認を、何度もしている</p><p class="do"><b>→</b> 仕事の流れを整理します</p></div><div class="pr num">15<small>万円〜</small></div></div>
+
+      <div class="grp"><h3>システム</h3></div>
+      <div class="row"><div><p class="pain">システム会社の見積もりが妥当か分からない</p><p class="do"><b>→</b> 見積もりを読み解き、発注の相談役になります</p></div><div class="pr num">15<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">ITプロジェクトの進め方を講習してほしい</p><p class="do"><b>→</b> 計画の立て方から発注先との進め方まで、講習します</p></div><div class="pr num">20<small>万円〜</small></div></div>
+
+      <!-- 11/27 17:2x ホームページ制作をITコンサルの1つの欄として、ほかの欄と同じ「行」の形に揃えた（チラシ風のカード・字下げ・キャッチを外し、基本料金の重複行も1本に）。文は hp_seisaku_20261126 のビラから -->
+      <div class="grp" id="hp"><h3>ホームページの作成・保守</h3></div>
+      <div class="row"><div><p class="pain">個人店プラン（3ページまで）</p><p class="do"><b>→</b> 安く始めて、管理はご自分で。管理方法を最初に丁寧にお教えします</p><p class="nt">保守：必要になったときだけ対応・1時間3,000円</p></div><div class="pr num">5<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">会社プラン（3ページまで）</p><p class="do"><b>→</b> 手厚い保守とセキュリティ対応</p><p class="nt">保守：月10,000円（サーバーの基本ソフト（OS）や部品（ライブラリ）のセキュリティ更新、軽微なバグ修正）</p></div><div class="pr num">20<small>万円〜</small></div></div>
+      <div class="row"><div><p class="pain">Webアプリプラン</p><p class="do"><b>→</b> ネットショップ（ECサイト）や予約サイトなど、システムを伴うサイトに</p></div><div class="pr num"><span class="tbd">要相談</span></div></div>
+      <div class="row"><div><p class="pain">できること</p><p class="do"><b>→</b> SEO対策：Googleで検索した人に見つけてもらいやすく</p><p class="do"><b>→</b> AIO対策：ChatGPTなどのAIの答えに名前が出やすく</p><p class="do"><b>→</b> MCP経路：ChatGPTなどのAIが、お店や会社の情報を正しく読み取れる窓口を作る</p></div></div>
+      <div class="row"><div><p class="pain">ページ追加（1ページごと）</p></div><div class="pr num">4<small>万円</small></div></div>
+      <div class="row"><div><p class="pain">お問い合わせフォーム</p></div><div class="pr num">3<small>万円</small></div></div>
+      <div class="row"><div><p class="pain">外部サービスの埋め込み（Googleマップ・Instagram・YouTube・予約ボタンなど）</p></div><div class="pr num">1<small>万円</small></div></div>
+      <p class="notes">ドメイン（ホームページの住所。◯◯.jp など）の代金（目安 年2,000〜4,000円）が別途かかります。具体額は要相談。<br>サーバー代（目安 月1,000円ほど）が別途必要な場合もあります。具体額は要相談。</p>
+
+      <div class="rate-box">
+        <div class="lab">料金の基本的な考え方</div>
+        <div class="rate">作業1日あたり <b class="num">5<small>万円</small></b></div>
+        <div class="free">お見積りは無料</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ⑤ 経歴（it_consul_20261127_v28.html の2行） -->
+  <section id="profile">
+    <div class="wrap">
+      <div class="sec"><h2>担当するのは</h2></div>
+      <ul class="career">
+        <li>元アクセンチュアで大手銀行・保険会社のシステム開発の進行管理</li>
+        <li>京都大学理学部卒、東京大学大学院修了。応用情報技術者</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ⑥ 成果物ページへのリンク -->
+  <section id="works">
+    <div class="wrap">
+      <div class="sec"><h2>成果物</h2></div>
+      <a class="btn" href="works.html">成果物を見る →</a>
+    </div>
+  </section>
+</main>
+
+<!-- ⑧ お問い合わせフォーム。送り先は Web3Forms（WEB3FORMS_KEY に酒井さんのアクセスキー。決まるまで空） -->
+<section id="form" class="cf">
+  <div class="wrap">
+    <div class="sec"><h2>お問い合わせ</h2></div>
+    <form id="cform" novalidate>
+      <label><span>お名前<b>必須</b></span><input name="name" required autocomplete="name"></label>
+      <label><span>会社名・店名</span><input name="company" autocomplete="organization"></label>
+      <label><span>メール<b>必須</b></span><input name="email" type="email" required autocomplete="email"></label>
+      <label><span>電話</span><input name="tel" type="tel" autocomplete="tel"></label>
+      <label><span>ご相談内容<b>必須</b></span><textarea name="body" rows="6" required></textarea></label>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="btn">送信する</button>
+      <p id="cmsg" class="cmsg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<a href="#form" id="fab" class="fab">お問い合わせ</a>
+<script>
+const WEB3FORMS_KEY='';
+const f=document.getElementById('cform'),m=document.getElementById('cmsg'),fab=document.getElementById('fab');
+new IntersectionObserver(e=>fab.classList.toggle('off',e[0].isIntersecting),{threshold:.15}).observe(document.getElementById('form'));
+f.addEventListener('submit',async ev=>{
+  ev.preventDefault();
+  if(!f.checkValidity()){m.textContent='お名前・メール・ご相談内容を入力してください';f.reportValidity();return}
+  const b=f.querySelector('button');b.disabled=true;m.textContent='送信しています…';
+  try{
+    const d=Object.fromEntries(new FormData(f));d.botcheck=f.botcheck.checked;
+    Object.assign(d,{access_key:WEB3FORMS_KEY,subject:'ホームページからのお問い合わせ（'+d.name+'様）',from_name:'ITコンサル ホームページ',replyto:d.email});
+    const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});
+    const j=await r.json();if(!r.ok||!j.success)throw 0;
+    f.reset();m.textContent='送信しました。折り返しご連絡します';
+  }catch(e){m.textContent='送信できませんでした。メールか電話でご連絡ください'}
+  b.disabled=false;
+});
+</script>
+
+<!-- ⑦ 連絡先 -->
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <div class="msg">まずは困っていることを<br>そのままお聞かせください</div>
+    <div class="who">
+      <div class="p">酒井 勇輔</div>
+      <div class="m"><em>メール：</em><a href="mailto:yusukesakaioffice@gmail.com">yusukesakaioffice@gmail.com</a></div>
+      <div class="m"><em>電話：</em><a href="tel:08047362509" class="num">080-4736-2509</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
