@@ -41,6 +41,7 @@ section{padding:36px 0 8px}
 .do b{color:var(--acc);font-weight:900}
 .pr{font-size:24px;font-weight:900;white-space:nowrap;text-align:right;line-height:1}
 .pr small{font-family:'Noto Sans JP',sans-serif;font-size:13px;font-weight:900;margin-left:1px}
+.tax{display:block;font-size:11px;font-weight:400;margin-top:4px;color:#555}
 .rate-box{margin-top:22px;border-top:2px solid var(--ink);padding-top:14px}
 .lab{font-size:13px;font-weight:900;letter-spacing:.12em;color:var(--sub);margin-bottom:4px}
 .rate{display:flex;align-items:baseline;gap:8px;font-size:15px;font-weight:900}
