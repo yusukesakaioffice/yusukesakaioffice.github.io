@@ -48,3 +48,6 @@
 - メール: yusukesakaioffice@gmail.com
 - 電話: 080-4736-2509
 - フォーム: https://it.yusukesakai.jp/#form
+
+## MCP
+- AI向けデータ提供（MCP）: https://it-office-mcp.sakai-site-mcp.workers.dev/mcp
