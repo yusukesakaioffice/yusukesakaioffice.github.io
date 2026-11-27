@@ -182,3 +182,4 @@ html{scroll-behavior:smooth}
   .cta{grid-column:1/-1}
 }
 .wl .t::after{content:" →";color:var(--acc)}
+.taxnote{margin-top:10px;font-size:13px;color:var(--sub);text-align:right}
