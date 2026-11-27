@@ -1,6 +1,3 @@
-/* 酒井 勇輔 ITコンサル HP（2026-11-27）
-   色・書体は flyer/it_consul_20261127_v28.html と flyer/hp_seisaku_20261126_v37.html に合わせる。
-   色付きの左縦線は使わない（区切りは上下の線と地の色で）。 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Archivo:wght@600;800;900&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;border-radius:0}
 :root{--ink:#0e0e0e;--sub:#5f5f5f;--acc:#ff4a1c;--paper:#ffffff;--hair:#cccccc}
@@ -10,7 +7,6 @@ a{color:inherit}
 .num{font-family:'Archivo','Noto Sans JP',sans-serif;font-variant-numeric:tabular-nums}
 .wrap{max-width:960px;margin:0 auto;padding:0 20px}
 
-/* ① 一番上（黒の面） */
 .hero{background:var(--ink);color:#fff;padding:36px 0 32px}
 .hero-grid{display:grid;grid-template-columns:1fr 240px;gap:32px;align-items:center}
 .to{font-size:22px;font-weight:900;letter-spacing:.08em;color:var(--acc)}
@@ -22,12 +18,10 @@ a{color:inherit}
 .tags{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
 .tags span{font-size:13px;font-weight:900;border:1.5px solid #fff;padding:2px 10px 3px}
 
-/* ② 顔写真の枠：img/photo.jpg が無いときは灰色の四角に「写真」 */
 .photo{position:relative;width:100%;aspect-ratio:3/4;background:#bdbdbd;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .photo span{font-size:18px;font-weight:700;color:#4a473f;letter-spacing:.2em}
 .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%}
 
-/* 見出し（ビラの黒い箱＋横線） */
 section{padding:36px 0 8px}
 .sec{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .sec h2{font-size:17px;font-weight:900;letter-spacing:.12em;background:var(--ink);color:var(--paper);padding:3px 12px 4px;white-space:nowrap}
@@ -35,7 +29,6 @@ section{padding:36px 0 8px}
 .sec small{order:3;font-size:13px;font-weight:700;color:var(--sub);white-space:nowrap}
 .sec::after{order:2}
 
-/* ③ ITコンサル */
 .q{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:24px;font-weight:900;margin-bottom:6px}
 .q em{font-style:normal;color:var(--acc)}
 .q .tax{font-size:13px;font-weight:900;color:var(--sub);white-space:nowrap}
@@ -55,7 +48,6 @@ section{padding:36px 0 8px}
 .rate b small{font-family:'Noto Sans JP',sans-serif;font-size:15px;margin-left:2px}
 .free{margin-top:8px;display:inline-block;background:var(--acc);color:var(--ink);font-size:14px;font-weight:900;padding:2px 10px}
 
-/* ④ ホームページ制作・保守（朱の面） */
 .hp-hero{background:var(--acc);padding:28px 0 26px;margin-top:36px}
 .hp-hero .top{font-size:14px;font-weight:900;letter-spacing:.14em}
 .hp-hero .c1{margin-top:8px;font-size:44px;font-weight:900;line-height:1.1;letter-spacing:-.04em}
@@ -87,16 +79,13 @@ ul.fee{list-style:none;border-top:1px solid var(--ink)}
 .fee li:nth-child(3),.fee li:last-child{border-bottom:1px solid var(--ink)}
 .notes{margin-top:10px;font-size:13px;line-height:1.75;color:#4a473f}
 
-/* ⑤ 経歴 */
 .career{list-style:none}
 .career li{font-size:16px;line-height:1.7;padding-left:1em;text-indent:-1em}
 .career li::before{content:'・'}
 
-/* ⑥ 成果物へのリンク */
 .btn{display:inline-block;background:var(--ink);color:var(--paper);font-size:16px;font-weight:900;letter-spacing:.06em;padding:12px 22px;text-decoration:none}
 .btn:hover{background:var(--acc);color:var(--ink)}
 
-/* ⑦ 連絡先（朱の帯） */
 .foot{margin-top:40px;background:var(--acc);color:var(--ink);padding:28px 0 32px}
 .foot .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .foot .msg{font-size:22px;font-weight:900;line-height:1.5}
@@ -105,14 +94,12 @@ ul.fee{list-style:none;border-top:1px solid var(--ink)}
 .foot .m em{font-style:normal;width:4.2em}
 .foot .m a{font-weight:900;text-decoration:underline;text-underline-offset:3px;word-break:break-all}
 
-/* works.html */
 .pagehead{background:var(--ink);color:#fff;padding:20px 0}
 .pagehead a{font-size:14px;font-weight:900;color:var(--acc);text-decoration:none}
 .works{padding:40px 0 60px}
 .works h1{font-size:30px;font-weight:900;letter-spacing:.06em}
 .works p{margin-top:14px;font-size:17px;font-weight:700;color:var(--sub)}
 
-/* スマホ幅 */
 @media (max-width:700px){
   .hero{padding:26px 0 24px}
   .hero-grid{grid-template-columns:1fr;gap:20px}
@@ -141,14 +128,12 @@ ul.fee{list-style:none;border-top:1px solid var(--ink)}
 .wl .t{display:block;font-size:18px;font-weight:900}
 .wl .u{display:block;margin-top:4px;font-size:14px;font-weight:700;color:var(--sub)}
 .row .nt{margin-top:2px;font-size:12px;color:var(--sub)}
-/* 11/27 17:2x .sub は使わなくなった（ホームページ制作も行の形に揃えた） */
 .sub{margin:6px 0 0;padding:4px 0 6px 14px;border-left:0}
 .sub .lead{font-size:16px;margin-top:6px}
 .sub h4{margin-top:14px;font-size:14px;font-weight:900;color:var(--ink)}
 .sub h4 + .row{padding-top:6px}
 .sub h4 + .plans,.sub h4 + ul.fee{margin-top:8px}
 
-/* お問い合わせフォーム・右下の固定ボタン */
 .cf{margin-top:40px}
 #cform{display:grid;gap:14px;max-width:640px}
 #cform label{display:grid;gap:4px;font-size:14px;font-weight:900}
