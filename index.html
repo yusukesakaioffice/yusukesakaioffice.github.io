@@ -89,7 +89,7 @@
   </section>
 </main>
 
-<!-- ⑧ お問い合わせフォーム。送り先は Web3Forms（WEB3FORMS_KEY に酒井さんのアクセスキー。決まるまで空） -->
+<!-- ⑧ お問い合わせフォーム。送り先は Web3Forms（WEB3FORMS_KEY はアクセスキー。公開してよい値） -->
 <section id="form" class="cf">
   <div class="wrap">
     <div class="sec"><h2>お問い合わせ</h2></div>
@@ -108,7 +108,7 @@
 
 <a href="#form" id="fab" class="fab">お問い合わせ</a>
 <script>
-const WEB3FORMS_KEY='';
+const WEB3FORMS_KEY='15698f7c-85f5-45d7-955a-04d66f195dc4';
 const f=document.getElementById('cform'),m=document.getElementById('cmsg'),fab=document.getElementById('fab');
 new IntersectionObserver(e=>fab.classList.toggle('off',e[0].isIntersecting),{threshold:.15}).observe(document.getElementById('form'));
 f.addEventListener('submit',async ev=>{
